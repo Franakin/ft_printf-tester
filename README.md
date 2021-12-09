@@ -7,5 +7,5 @@ CD into the folder.
 To run tester:
 bash m
 
-All tests are written into results.txt
-All KO's are written into error_log.txt
+All tests are written into results.txt.
+All KO's are written into error_log.txt.
