@@ -192,8 +192,8 @@ int	main(void)
 	printf("Return values: printf = %d, ft_printf = %d\n----------\n", pf, ft);
 	fclose(fp);
 	fp = freopen("results.txt", "a", stdout);
-	pf = printf("%lx\n", -2147483648);
-	ft = ft_printf("%x\n", -2147483648);
+	pf = printf("%x\n", (unsigned int)2147483648);
+	ft = ft_printf("%x\n", 2147483648);
 	printf("Return values: printf = %d, ft_printf = %d\n----------\n", pf, ft);
 	fclose(fp);
 	fp = freopen("results.txt", "a", stdout);
@@ -202,8 +202,8 @@ int	main(void)
 	printf("Return values: printf = %d, ft_printf = %d\n----------\n", pf, ft);
 	fclose(fp);
 	fp = freopen("results.txt", "a", stdout);
-	pf = printf("%x %x %x %x %lx\n", 2147483647, 0, 123, -543, -2147483648);
-	ft = ft_printf("%x %x %x %x %x\n", 2147483647, 0, 123, -543, -2147483648);
+	pf = printf("%x %x %x %x %x\n", 2147483647, 0, 123, -543, (unsigned int)2147483648);
+	ft = ft_printf("%x %x %x %x %x\n", 2147483647, 0, 123, -543, 2147483648);
 	printf("Return values: printf = %d, ft_printf = %d\n----------\n----------\n----------\n", pf, ft);
 	fclose(fp);
 
@@ -214,8 +214,8 @@ int	main(void)
 	printf("Return values: printf = %d, ft_printf = %d\n----------\n", pf, ft);
 	fclose(fp);
 	fp = freopen("results.txt", "a", stdout);
-	pf = printf("%lX\n", -2147483648);
-	ft = ft_printf("%X\n", -2147483648);
+	pf = printf("%X\n", (unsigned int)2147483648);
+	ft = ft_printf("%X\n", 2147483648);
 	printf("Return values: printf = %d, ft_printf = %d\n----------\n", pf, ft);
 	fclose(fp);
 	fp = freopen("results.txt", "a", stdout);
@@ -224,8 +224,8 @@ int	main(void)
 	printf("Return values: printf = %d, ft_printf = %d\n----------\n", pf, ft);
 	fclose(fp);
 	fp = freopen("results.txt", "a", stdout);
-	pf = printf("%X %X %X %X %lX\n", 2147483647, 0, 123, -543, -2147483648);
-	ft = ft_printf("%X %X %X %X %X\n", 2147483647, 0, 123, -543, -2147483648);
+	pf = printf("%X %X %X %X %X\n", 2147483647, 0, 123, -543, (unsigned int)2147483648);
+	ft = ft_printf("%X %X %X %X %X\n", 2147483647, 0, 123, -543, 2147483648);
 	printf("Return values: printf = %d, ft_printf = %d\n----------\n----------\n----------\n", pf, ft);
 	fclose(fp);
 
